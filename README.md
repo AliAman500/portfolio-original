@@ -22,7 +22,7 @@ This was a fully completed project aimed at creating a portfolio website with a 
 
 ## Discontinued Reason
 The project was fully completed but not deployed due to the cost of hosting the backend. A simpler, static version of the portfolio website was created and deployed using GitHub Pages.
-You can view that [here](https://ali-aman.ca).
+You can view that <a href="https://ali-aman.ca" target="_blank">here</a>
 
 ---
 
