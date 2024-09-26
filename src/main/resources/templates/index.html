@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1">
+	<link rel="stylesheet" href="/css/ali_style.css">
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@300..700&display=swap" rel="stylesheet">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" />
+	<link rel="stylesheet" type='text/css' href="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/devicon.min.css" />
+	<script src="https://cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js"></script>
+	<title>Ali Aman</title>
+</head>
+
+<body>
+	<div class="header">
+		<div class="navbar">
+			<a href="https://ali-aman.ca" class="logo">ali <div class="last">aman</div></a>
+			<div class="links">
+				<a href="#home">Home</a>
+				<a href="#projects">Projects</a>
+				<a href="#skills">Skills</a>
+				<a href="#contact">Contact</a>
+			</div>
+			<div class="sm_links">
+				<a href="https://github.com/AliAman500?tab=repositories" target="_blank"><i class="fa-brands fa-github"></i></a>
+				<a href="https://linkedin.com/in/ali-aman-776418224" target="_blank"><i class="fa-brands fa-linkedin"></i></a>
+				<a href="mailto:ali.burki1@hotmail.com"><i class="fa-solid fa-envelope"></i></a>
+			</div>
+			<i id="menu-bar" class="fa-solid fa-bars" onclick="toggleSidebar()"></i>
+		</div>
+	</div>
+	<div class="sidebar">
+		<div class="links">
+			<a onclick="hideSidebar()" href="#home">Home</a>
+			<a onclick="hideSidebar()" href="#projects">Projects</a>
+			<a onclick="hideSidebar()" href="#skills">Skills</a>
+			<a onclick="hideSidebar()" href="#contact">Contact</a>
+		</div>
+		<div class="sm_links">
+			<a href="https://github.com/AliAman500?tab=repositories" target="_blank"><i class="fa-brands fa-github"></i></a>
+			<a href="https://linkedin.com/in/ali-aman-776418224" target="_blank"><i class="fa-brands fa-linkedin"></i></a>
+			<a href="mailto:ali.burki1@hotmail.com"><i class="fa-solid fa-envelope"></i></a>
+		</div>
+	</div>
+	<div class="sections">
+		<section id="home">
+			<div id="particles-js">
+			</div>
+			<div class="content">
+				<div class="text_container">
+					<h1>ALI AMAN</h1>
+					<h2>Software Engineer</h2>
+					<h3>I am a future Software Engineer dedicated to solving<br> complex problems in the realm of SWE.</h3>
+					<div class="links">
+						<a href="#projects" class="p_link">Projects</a>
+						<a href="#contact" class="c_link">Contact</a>
+					</div>
+				</div>
+			</div>
+
+		</section>
+		<section id="projects">
+			<div class="content">
+				<h1>Projects</h1>
+				<h2 class="description">Some of the projects I have worked on personally as well as for school.</h2>
+				<div class="grid">
+					<div th:each="project : ${projects}" class="card">
+						<div class="image_container">
+							<img th:src="${project.imageUrl}" alt="Image of ${project.name}">
+						</div>
+						<div class="card-header">
+							<h2 class="project-name" th:text="${project.name}"></h2>
+							<h2 class="project-date" th:text="${project.date}"></h2>
+						</div>
+						<p th:text="${project.description}"></p>
+						<div class="footer">
+							<a th:each="tag : ${project.tags}" th:text="${tag}" class="tag"></a>
+						</div>
+						<a th:href="${project.repoUrl}" class="e_link" target="_blank" rel="noopener noreferrer">
+							<i class="fa-solid fa-up-right-from-square"></i>
+						</a>
+					</div>
+				</div>
+			</div>
+		</section>
+		<section id="skills">
+			<div class="content">
+				<h1>Skills</h1>
+				<h2 class="description">Skills I have aquired by working on personal and school projects.</h2>
+				<div class="grid">
+					<div class="card" th:each="category : ${skills}">
+						<h2>
+							<span th:text="${category.category}"></span>
+							<i th:class="${category.icon}"></i>
+						</h2>
+						<div class="items">
+							<div th:each="skill : ${category.skills}" class="item">
+								<h3>
+									<i th:class="${skill.icon}"
+									   th:style="${skill.color != null} ? 'color:' + ${skill.color} : ''"></i> 
+									<span th:text="${skill.name}"></span>
+								</h3>
+								<div class="progress-dots">
+									<div class="dot" th:each="dot : ${#numbers.sequence(1, 5)}"
+										 th:classappend="${dot <= skill.progress} ? 'active' : ''"></div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
+		<section id="contact">
+			<div class="content">
+				<h1>Contact</h1>
+				<div class="sub-container">
+					<p class="email-p">Your Email</p>
+					<input type="text" class="email-area" name="singleLineText" placeholder=". . .">
+					<p class="inquiry-p">Your Inquiry</p>
+					<textarea class="inquiry-area" placeholder=". . ." spellcheck="false"></textarea>
+					<div class="footer">
+						<button type="button" class="send-link" onclick="sendEmail()">Send</button>
+						<div class="symbols">
+							<i id="error" class="fa-solid fa-triangle-exclamation"></i>
+							<i id="success" class="fa-solid fa-check"></i>
+						</div>
+						<p class="message"></p>
+						<div class="loading-square"></div>
+					</div>
+				</div>
+				<div class="footer">
+					<img src="/images/footer-bg.png" alt="">
+					<h2>ali-aman.ca</h2>
+					<p class="p-1">© 2024 Ali Aman. All rights reserved.</p>
+					<p class="p-2">Font used: 'Quicksand' from Google Fonts. Icons provided by Font Awesome and Devicon.</p>
+				</div>
+			</div>
+		</section>
+	</div>
+	<script src="/js/navigation.js"></script>
+	<script src="/js/animation.js"></script>
+	<script src="/js/sending.js"></script>
+</body>
+
+</html>

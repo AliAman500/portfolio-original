@@ -1,0 +1,58 @@
+[
+    {
+        "imageUrl": "/images/projects_page/b-spline.png",
+        "name": "B-Spline Simulator",
+        "date": "2023",
+        "description": "A B-Spline Curve and Bezier Curve simulator written in C++ using legacy OpenGL.",
+        "tags": ["C++", "OpenGL"],
+        "repoUrl": "https://github.com/AliAman500?tab=repositories"
+    },
+	{
+        "imageUrl": "/images/projects_page/maze-tankers.png",
+        "name": "Maze Tankers",
+        "date": "2022",
+        "description": "A 3D Multiplayer Game developed in Java, inspired by the popular 2D game TankTrouble.",
+        "tags": ["Java", "OpenGL"],
+        "repoUrl": "https://github.com/AliAman500?tab=repositories"
+    },
+    {
+        "imageUrl": "/images/projects_page/console-renderer.png",
+        "name": "Terminal Rasterizer",
+        "date": "2023",
+        "description": "A 3D Renderer written in C++ that runs in the Windows terminal.",
+        "tags": ["C++", "OpenGL"],
+        "repoUrl": "https://github.com/AliAman500?tab=repositories"
+    },
+    {
+        "imageUrl": "/images/projects_page/orbit.png",
+        "name": "Orbit Simulator",
+        "date": "2021",
+        "description": "Gravity simulator designed to emulate the principles of Classical Mechanics.",
+        "tags": ["Java", "AWT"],
+        "repoUrl": "https://github.com/AliAman500?tab=repositories"
+    },
+    {
+        "imageUrl": "/images/projects_page/spring.png",
+        "name": "B-Spline Spring",
+        "date": "2023",
+        "description": "A 3D Spring simulator that simulates tension and compression of a spring.",
+        "tags": ["C++", "OpenGL"],
+        "repoUrl": "https://github.com/AliAman500?tab=repositories"
+    },
+    {
+        "imageUrl": "/images/projects_page/vexter.png",
+        "name": "Vexter",
+        "date": "2018",
+        "description": "A 2D Game with procedural cave generation that I developed in highschool using my own engine.",
+        "tags": ["Java", "AWT"],
+        "repoUrl": "https://github.com/AliAman500?tab=repositories"
+    },
+	{
+        "imageUrl": "/images/projects_page/vexter.png",
+        "name": "Personal Portfolio",
+        "date": "2024",
+        "description": "This is the first website that I built and published. Hope you like it!",
+        "tags": ["Java", "Spring", "HTML", "CSS", "JavaScript"],
+        "repoUrl": "https://github.com/AliAman500?tab=repositories"
+    }
+]

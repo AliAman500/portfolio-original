@@ -1,0 +1,68 @@
+[
+    {
+        "category": "Programming",
+		"icon": "fa-solid fa-code",
+        "skills": [
+            {"name": "Java", "progress": 5, "icon": "devicon-java-plain colored"},
+            {"name": "C", "progress": 4, "icon": "devicon-c-plain", "color": "#46a8e0"},
+            {"name": "C++", "progress": 3, "icon": "devicon-cplusplus-plain", "color": "#6681fa"},
+            {"name": "C#", "progress": 3, "icon": "devicon-csharp-plain", "color": "#b463cf"},
+            {"name": "Python", "progress": 3, "icon": "devicon-python-plain colored"},
+            {"name": "JavaScript", "progress": 4, "icon": "devicon-javascript-plain colored"}
+            
+        ]
+    },
+	{
+        "category": "Development",
+		"icon": "fa-solid fa-terminal",
+        "skills": [
+			{"name": "Linux", "progress": 3, "icon": "fa-brands fa-linux", "color": "#ffdd33"},
+            {"name": "VS Code", "progress": 4, "icon": "devicon-vscode-plain colored"},
+            {"name": "Eclipse", "progress": 5, "icon": "devicon-eclipse-plain", "color": "#7a6eff"},
+            {"name": "IntelliJ", "progress": 3, "icon": "devicon-intellij-plain colored"},
+            {"name": "Git", "progress": 3, "icon": "fa-brands fa-git", "color": "#ff9933"},
+            {"name": "GitHub", "progress": 4, "icon": "fa-brands fa-github", "color": "white"}
+        ]
+    },
+	{
+        "category": "Web",
+		"icon": "fa-solid fa-globe",
+        "skills": [
+			{"name": "HTML", "progress": 5, "icon": "devicon-html5-plain colored"},
+            {"name": "CSS", "progress": 5, "icon": "devicon-css3-plain colored"},
+            {"name": "JavaScript", "progress": 4, "icon": "devicon-javascript-plain colored"},
+            {"name": "PHP", "progress": 2, "icon": "devicon-php-plain colored"},
+            {"name": "Spring Boot", "progress": 2, "icon": "devicon-spring-plain colored"}
+        ]
+    },
+	{
+        "category": "Tools",
+		"icon": "fa-solid fa-wrench",
+        "skills": [
+            {"name": "Swing", "progress": 5, "icon": "devicon-java-plain colored"},
+            {"name": "OpenGL", "progress": 4, "icon": "devicon-opengl-plain", "color": "#0593ff"},
+            {"name": "Thymeleaf", "progress": 2, "icon": "devicon-spring-plain colored"},
+            {"name": "Docker", "progress": 3, "icon": "devicon-docker-plain colored"}
+        ]
+    },
+	{
+        "category": "Productivity",
+		"icon": "fa-solid fa-cube",
+        "skills": [
+            {"name": "MS Word", "progress": 5, "icon": "fa-solid fa-file-word", "color": "#5482ff"},
+            {"name": "MS PowerPoint", "progress": 5, "icon": "fa-solid fa-file-powerpoint", "color": "#ed7437"},
+            {"name": "MS Excel", "progress": 3, "icon": "fa-solid fa-file-excel", "color": "#35b062"},
+			{"name": "Trello", "progress": 4, "icon": "devicon-trello-plain colored", "color": "#0079BF"}
+        ]
+    },
+	{
+        "category": "Creativity",
+		"icon": "fa-solid fa-pen-nib",
+        "skills": [
+            {"name": "Adobe PS", "progress": 4, "icon": "devicon-photoshop-plain", "color": "#0593ff"},
+            {"name": "Paint.NET", "progress": 5, "icon": "fa-solid fa-paintbrush", "color": "#37deed"},
+            {"name": "Gimp", "progress": 3, "icon": "devicon-gimp-plain colored"},
+            {"name": "Godot", "progress": 5, "icon": "devicon-godot-plain colored"}
+        ]
+    }
+]
